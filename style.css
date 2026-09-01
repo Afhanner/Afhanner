@@ -77,13 +77,25 @@ section h2 {
 .hero {
     min-height: 75vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100vw;
+    margin-left: calc((1050px - 100vw) / 2);
 
     position: relative;
     overflow: hidden;
     isolation: isolate;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+    padding: 0 24px;
+
+    position: relative;
+    z-index: 1;
 }
 
 
